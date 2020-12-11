@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const { db } = require('./Develop/db/db');
+const { db } = require('./Develop/db/db.json');
 
 // GET /notes should return the notes.html file
 
@@ -8,7 +8,7 @@ const { db } = require('./Develop/db/db');
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON
 app.get('/api/notes', (req, res) => {
-    res.send('Testing!');
+    res.json(db);
 });
 
 // POST /api/notes should receive a new note ans save to req.body
