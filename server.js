@@ -1,4 +1,5 @@
 const express = require('express');
+const PORT = process.env.PORT || 3002;
 const app = express();
 const db = require('./Develop/db/db.json');
 console.log("db: ", db);
@@ -13,8 +14,9 @@ app.get('/api/notes', (req, res) => {
 });
 
 // POST /api/notes should receive a new note ans save to req.body
-// then add it 
+// then add it to the db.json file, then return the new note to the client
+// need to give each note a unique id when it is saved
 
-app.listen(3002, () => {
-    console.log('Note Taker Server now on port 3002!');
+app.listen(PORT, () => {
+    console.log(`Note Taker Server now on port ${PORT}!`);
 });
