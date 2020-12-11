@@ -1,0 +1,19 @@
+{
+  "name": "miniature-eureka-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mbogaert/note-taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mbogaert/note-taker/issues"
+  },
+  "homepage": "https://github.com/Mbogaert/note-taker#readme"
+}
