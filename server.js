@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const { db } = require('./Develop/db/db.json');
+const db = require('./Develop/db/db.json');
+console.log("db: ", db);
 
 // GET /notes should return the notes.html file
 
