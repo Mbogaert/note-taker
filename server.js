@@ -20,6 +20,8 @@ function createNewNote(body, notesArray) {
     return note;
 };
 
+// Maybe add valiation later (module 11.2.6)
+
 // GET /notes should return the notes.html file
 
 // GET * should return the index.html file
