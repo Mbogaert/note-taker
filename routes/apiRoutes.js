@@ -14,7 +14,6 @@ router.get('/notes', (req, res) => {
 // then add it to the db.json file, then return the new note to the client
 router.post('/notes', (req, res) => {
     // creates an id based on the length of the array for each new note
-    // need to change to uuid
     req.body.id = uuidV4();
     const note = req.body;
     db.push(note);
