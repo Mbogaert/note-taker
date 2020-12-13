@@ -6,6 +6,7 @@ const path = require('path');
 // for the middlewear:
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'));
 const db = require('./Develop/db/db.json');
 console.log("db: ", db);
 
@@ -39,6 +40,10 @@ app.post('/api/notes', (req, res) => {
     // add notes to json file
     const note = createNewNote(req.body, db);
     res.json(note);
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
 });
 
 app.listen(PORT, () => {
