@@ -2,6 +2,7 @@
 const router = require('express').Router();
 const db = require('../db/db.json');
 const fs = require('fs');
+const { v4: uuidV4 } = require("uuid");
 
 // GET /api/notes should read the db.json file and return all saved notes as JSON
 router.get('/notes', (req, res) => {
@@ -14,7 +15,7 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
     // creates an id based on the length of the array for each new note
     // need to change to uuid
-    req.body.id = db.length.toString();
+    req.body.id = uuidV4();
     const note = req.body;
     db.push(note);
 
