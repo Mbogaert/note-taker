@@ -23,4 +23,10 @@ router.post('/notes', (req, res) => {
     res.json(db);
 });
 
+router.delete('/notes/:id', (req, res) => {
+    // filter or find - take in an id and then remove the element that has the id
+
+    // const id = filter(req.body => req.body.id === 'id')
+});
+
 module.exports = router;
