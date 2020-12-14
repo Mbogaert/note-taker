@@ -19,7 +19,8 @@
   Node, JavaScript, NPM, Express, uuid
 
   ## Repository
-  [Repository Link](https://github.com/Mbogaert/note-taker)
+  [Repository Link](https://github.com/Mbogaert/note-taker) <br>
+  [Heroku Link](https://frozen-taiga-73380.herokuapp.com/)
 
   ## Screenshot
   Landing Page
